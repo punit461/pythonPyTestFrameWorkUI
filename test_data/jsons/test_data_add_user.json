@@ -1,0 +1,12 @@
+{
+  "email": "abc@xyz.com",
+  "password": "abc123",
+  "first_name": "john",
+  "last_name": "james",
+  "gender": "male",
+  "dob": "8/18/2000",
+  "company_name": "ABC Associates",
+  "vendor": "Vendor 1",
+  "comment": " This is testing comment",
+  "success_msg": "The new customer has been added successfully."
+}

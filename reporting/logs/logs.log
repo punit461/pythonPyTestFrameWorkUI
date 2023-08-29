@@ -1,0 +1,146 @@
+2023-08-29 23:51:55 - ERROR - Test test_successful_login FAILED
+2023-08-29 23:51:55 - ERROR - 'WebDriver' object has no attribute 'config_reader'
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 18, in test_successful_login
+    config_reader = setup.config_reader
+AttributeError: 'WebDriver' object has no attribute 'config_reader'
+2023-08-29 23:51:55 - INFO - Finished test: test_successful_login
+2023-08-29 23:54:54 - ERROR - Test test_successful_login FAILED
+2023-08-29 23:54:54 - ERROR - 'WebDriver' object has no attribute 'config_reader'
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 18, in test_successful_login
+    config_reader = request.getfixturevalue("setup").config_reader
+AttributeError: 'WebDriver' object has no attribute 'config_reader'
+2023-08-29 23:54:54 - INFO - Finished test: test_successful_login
+2023-08-29 23:57:31 - ERROR - Test test_successful_login FAILED
+2023-08-29 23:57:31 - ERROR - 'tuple' object has no attribute 'config_reader'
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 18, in test_successful_login
+    config_reader = request.getfixturevalue("setup").config_reader
+AttributeError: 'tuple' object has no attribute 'config_reader'
+2023-08-29 23:57:31 - INFO - Finished test: test_successful_login
+2023-08-30 00:03:58 - INFO - test_successful_login completed successfully.
+2023-08-30 00:03:58 - INFO - Finished test: test_successful_login
+2023-08-30 00:05:36 - INFO - test_successful_login completed successfully.
+2023-08-30 00:05:36 - INFO - Finished test: test_successful_login
+2023-08-30 00:09:06 - INFO - test_successful_login completed successfully.
+2023-08-30 00:09:06 - INFO - Finished test: test_successful_login
+2023-08-30 00:09:16 - ERROR - Test test_failure_login FAILED
+2023-08-30 00:09:16 - ERROR - Element ('id', 'Email') not found within 10 seconds.
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
+    element = WebDriverWait(self.driver, timeout).until(
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DA852A2+57122]
+	(No symbol) [0x00007FF70D9FEA92]
+	(No symbol) [0x00007FF70D8CE3AB]
+	(No symbol) [0x00007FF70D907D3E]
+	(No symbol) [0x00007FF70D907E2C]
+	(No symbol) [0x00007FF70D940B67]
+	(No symbol) [0x00007FF70D92701F]
+	(No symbol) [0x00007FF70D93EB82]
+	(No symbol) [0x00007FF70D926DB3]
+	(No symbol) [0x00007FF70D8FD2B1]
+	(No symbol) [0x00007FF70D8FE494]
+	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
+	GetHandleVerifier [0x00007FF70DD81D24+3189156]
+	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
+	GetHandleVerifier [0x00007FF70DB16D06+653702]
+	(No symbol) [0x00007FF70DA0A208]
+	(No symbol) [0x00007FF70DA062C4]
+	(No symbol) [0x00007FF70DA063F6]
+	(No symbol) [0x00007FF70D9F67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 37, in test_failure_login
+    login_page.login(username, password)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
+    self.enter_username(username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
+    self.send_keys(LPLocators.txt_username, username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
+    element = self.locate_element(locator, timeout)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
+    raise Exception(f"Element {locator} not found within {timeout} seconds.")
+Exception: Element ('id', 'Email') not found within 10 seconds.
+2023-08-30 00:09:16 - INFO - Finished test: test_failure_login
+2023-08-30 00:11:10 - ERROR - Test test_failure_login FAILED
+2023-08-30 00:11:10 - ERROR - assert 'Dashboard / nopCommerce administration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 40, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / nopCommerce administration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-30 00:11:10 - INFO - Finished test: test_failure_login
+2023-08-30 00:11:50 - INFO - test_successful_login completed successfully.
+2023-08-30 00:11:50 - INFO - Finished test: test_successful_login
+2023-08-30 00:12:01 - ERROR - Test test_failure_login FAILED
+2023-08-30 00:12:01 - ERROR - Element ('id', 'Email') not found within 10 seconds.
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
+    element = WebDriverWait(self.driver, timeout).until(
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DA852A2+57122]
+	(No symbol) [0x00007FF70D9FEA92]
+	(No symbol) [0x00007FF70D8CE3AB]
+	(No symbol) [0x00007FF70D907D3E]
+	(No symbol) [0x00007FF70D907E2C]
+	(No symbol) [0x00007FF70D940B67]
+	(No symbol) [0x00007FF70D92701F]
+	(No symbol) [0x00007FF70D93EB82]
+	(No symbol) [0x00007FF70D926DB3]
+	(No symbol) [0x00007FF70D8FD2B1]
+	(No symbol) [0x00007FF70D8FE494]
+	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
+	GetHandleVerifier [0x00007FF70DD81D24+3189156]
+	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
+	GetHandleVerifier [0x00007FF70DB16D06+653702]
+	(No symbol) [0x00007FF70DA0A208]
+	(No symbol) [0x00007FF70DA062C4]
+	(No symbol) [0x00007FF70DA063F6]
+	(No symbol) [0x00007FF70D9F67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 37, in test_failure_login
+    login_page.login(username, password)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
+    self.enter_username(username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
+    self.send_keys(LPLocators.txt_username, username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
+    element = self.locate_element(locator, timeout)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
+    raise Exception(f"Element {locator} not found within {timeout} seconds.")
+Exception: Element ('id', 'Email') not found within 10 seconds.
+2023-08-30 00:12:01 - INFO - Finished test: test_failure_login
