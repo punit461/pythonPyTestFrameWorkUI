@@ -144,3 +144,247 @@ Traceback (most recent call last):
     raise Exception(f"Element {locator} not found within {timeout} seconds.")
 Exception: Element ('id', 'Email') not found within 10 seconds.
 2023-08-30 00:12:01 - INFO - Finished test: test_failure_login
+2023-08-30 00:28:09 - INFO - test_successful_login completed successfully.
+2023-08-30 00:28:09 - INFO - Finished test: test_successful_login
+2023-08-30 00:28:20 - ERROR - Test test_failure_login FAILED
+2023-08-30 00:28:20 - ERROR - Element ('id', 'Email') not found within 10 seconds.
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
+    element = WebDriverWait(self.driver, timeout).until(
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DA852A2+57122]
+	(No symbol) [0x00007FF70D9FEA92]
+	(No symbol) [0x00007FF70D8CE3AB]
+	(No symbol) [0x00007FF70D907D3E]
+	(No symbol) [0x00007FF70D907E2C]
+	(No symbol) [0x00007FF70D940B67]
+	(No symbol) [0x00007FF70D92701F]
+	(No symbol) [0x00007FF70D93EB82]
+	(No symbol) [0x00007FF70D926DB3]
+	(No symbol) [0x00007FF70D8FD2B1]
+	(No symbol) [0x00007FF70D8FE494]
+	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
+	GetHandleVerifier [0x00007FF70DD81D24+3189156]
+	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
+	GetHandleVerifier [0x00007FF70DB16D06+653702]
+	(No symbol) [0x00007FF70DA0A208]
+	(No symbol) [0x00007FF70DA062C4]
+	(No symbol) [0x00007FF70DA063F6]
+	(No symbol) [0x00007FF70D9F67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 37, in test_failure_login
+    login_page.login(username, password)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
+    self.enter_username(username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
+    self.send_keys(LPLocators.txt_username, username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
+    element = self.locate_element(locator, timeout)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
+    raise Exception(f"Element {locator} not found within {timeout} seconds.")
+Exception: Element ('id', 'Email') not found within 10 seconds.
+2023-08-30 00:28:20 - INFO - Finished test: test_failure_login
+2023-08-30 00:45:11 - INFO - test_successful_login completed successfully.
+2023-08-30 00:45:11 - INFO - Finished test: test_successful_login
+2023-08-30 00:46:24 - INFO - test_successful_login completed successfully.
+2023-08-30 00:46:24 - INFO - Finished test: test_successful_login
+2023-08-30 00:46:34 - ERROR - Test test_failure_login FAILED
+2023-08-30 00:46:34 - ERROR - Element ('id', 'Email') not found within 10 seconds.
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
+    element = WebDriverWait(self.driver, timeout).until(
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF70DA852A2+57122]
+	(No symbol) [0x00007FF70D9FEA92]
+	(No symbol) [0x00007FF70D8CE3AB]
+	(No symbol) [0x00007FF70D907D3E]
+	(No symbol) [0x00007FF70D907E2C]
+	(No symbol) [0x00007FF70D940B67]
+	(No symbol) [0x00007FF70D92701F]
+	(No symbol) [0x00007FF70D93EB82]
+	(No symbol) [0x00007FF70D926DB3]
+	(No symbol) [0x00007FF70D8FD2B1]
+	(No symbol) [0x00007FF70D8FE494]
+	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
+	GetHandleVerifier [0x00007FF70DD81D24+3189156]
+	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
+	GetHandleVerifier [0x00007FF70DB16D06+653702]
+	(No symbol) [0x00007FF70DA0A208]
+	(No symbol) [0x00007FF70DA062C4]
+	(No symbol) [0x00007FF70DA063F6]
+	(No symbol) [0x00007FF70D9F67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 44, in test_failure_login
+    login_page.login(username, password)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
+    self.enter_username(username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
+    self.send_keys(LPLocators.txt_username, username)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
+    element = self.locate_element(locator, timeout)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
+    raise Exception(f"Element {locator} not found within {timeout} seconds.")
+Exception: Element ('id', 'Email') not found within 10 seconds.
+2023-08-30 00:46:34 - INFO - Finished test: test_failure_login
+2023-08-30 00:51:02 - INFO - test_successful_login completed successfully.
+2023-08-30 00:51:02 - INFO - Finished test: test_successful_login
+2023-08-30 00:52:42 - ERROR - Test test_failure_login FAILED
+2023-08-30 00:52:42 - ERROR - assert 'Dashboard / nopCommerce administration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 47, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / nopCommerce administration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-30 00:52:42 - INFO - Finished test: test_failure_login
+2023-08-30 01:36:36 - ERROR - Test test_successful_login FAILED
+2023-08-30 01:36:36 - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 22, in test_successful_login
+    driver, config_reader = setup
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-30 01:36:36 - INFO - Finished test: test_successful_login
+2023-08-30 01:36:46 - ERROR - Test test_failure_login FAILED
+2023-08-30 01:36:46 - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 39, in test_failure_login
+    driver, config_reader = setup
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-30 01:36:46 - INFO - Finished test: test_failure_login
+2023-08-30 01:39:29 - ERROR - Test test_successful_login FAILED
+2023-08-30 01:39:29 - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 22, in test_successful_login
+    driver, config_reader = setup
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-30 01:39:29 - INFO - Finished test: test_successful_login
+2023-08-30 01:39:44 - ERROR - Test test_failure_login FAILED
+2023-08-30 01:39:44 - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 39, in test_failure_login
+    driver, config_reader = setup
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-30 01:39:44 - INFO - Finished test: test_failure_login
+2023-08-30 01:40:12 - ERROR - Test test_successful_login FAILED
+2023-08-30 01:40:12 - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 22, in test_successful_login
+    driver, config_reader = setup
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-30 01:40:12 - INFO - Finished test: test_successful_login
+2023-08-30 01:40:39 - ERROR - Test test_failure_login FAILED
+2023-08-30 01:40:39 - ERROR - cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 39, in test_failure_login
+    driver, config_reader = setup
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-30 01:40:39 - INFO - Finished test: test_failure_login
+2023-08-30 01:42:23 - INFO - test_successful_login completed successfully.
+2023-08-30 01:42:23 - INFO - Finished test: test_successful_login
+2023-08-30 01:44:09 - ERROR - Test test_failure_login FAILED
+2023-08-30 01:44:09 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-30 01:44:09 - INFO - Finished test: test_failure_login
+2023-08-30 02:02:28 - INFO - test_successful_login completed successfully.
+2023-08-30 02:02:28 - INFO - Finished test: test_successful_login
+2023-08-30 02:03:14 - ERROR - Test test_failure_login FAILED
+2023-08-30 02:03:14 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-30 02:03:14 - INFO - Finished test: test_failure_login
+2023-08-30 02:05:35 - INFO - test_successful_login completed successfully.
+2023-08-30 02:05:35 - INFO - Finished test: test_successful_login
+2023-08-30 02:06:07 - ERROR - Test test_failure_login FAILED
+2023-08-30 02:06:07 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-30 02:06:07 - INFO - Finished test: test_failure_login
+2023-08-30 02:09:55 - ERROR - Test test_successful_login FAILED
+2023-08-30 02:09:55 - ERROR - assert 'admin-demo.n...eout occurred' == 'Dashboard / ...dministration'
+  - Dashboard / nopCommerce administration
+  + admin-demo.nopcommerce.com | 524: A timeout occurred
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 33, in test_successful_login
+    assert (driver.title == "Dashboard / nopCommerce administration")
+AssertionError: assert 'admin-demo.n...eout occurred' == 'Dashboard / ...dministration'
+  - Dashboard / nopCommerce administration
+  + admin-demo.nopcommerce.com | 524: A timeout occurred
+2023-08-30 02:09:55 - INFO - Finished test: test_successful_login
+2023-08-30 02:10:29 - ERROR - Test test_failure_login FAILED
+2023-08-30 02:10:29 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-30 02:10:29 - INFO - Finished test: test_failure_login

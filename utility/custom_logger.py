@@ -2,6 +2,7 @@ import functools
 import logging
 import os
 import time
+import allure
 from test_suites import project_directory
 from utility.config_reader import ConfigReader
 
@@ -49,13 +50,23 @@ def logmethod(func):
     return wrapper
 
 
-def capture_screenshot(driver, name):
-    datestamp = time.strftime("%Y-%m-%d")
-    timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
-    folder_name = f'Test_execution_{datestamp}'
-    screenshot_dir = project_directory + "\\reporting\screenshots\\" + folder_name
-    # screenshot_dir = os.path.join(os.getcwd(), 'reporting', 'screenshots', folder_name)
-    os.makedirs(screenshot_dir, exist_ok=True)
-    screenshot_path = os.path.join(screenshot_dir, f'{name}_{timestamp}.png')
-    # print(screenshot_path)
-    driver.save_screenshot(screenshot_path)
+def capture_screenshot(driver, name="screenshot"):
+    if config_reader.get_ss_mode().lower() == "off" and config_reader.get_ss_allure_mode().lower() == 'yes':
+        allure.attach(
+            driver.get_screenshot_as_png(),
+            name=name,
+            attachment_type=allure.attachment_type.PNG
+        )
+    else:
+        datestamp = time.strftime("%Y-%m-%d")
+        timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
+        folder_name = f'Test_execution_{datestamp}'
+        screenshot_dir = project_directory + "\\reporting\screenshots\\" + folder_name
+        # screenshot_dir = os.path.join(os.getcwd(), 'reporting', 'screenshots', folder_name)
+        os.makedirs(screenshot_dir, exist_ok=True)
+        screenshot_path = os.path.join(screenshot_dir, f'{name}_{timestamp}.png')
+        driver.save_screenshot(screenshot_path)
+        allure_attach = config_reader.get_ss_allure_mode().lower()
+        if allure_attach in ["yes", "y"]:
+            allure.attach.file(screenshot_path, name=name, attachment_type=allure.attachment_type.PNG)
+

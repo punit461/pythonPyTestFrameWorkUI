@@ -56,3 +56,6 @@ class ConfigReader:
 
     def get_log_mode(self):
         return self.get_value('Automation', 'log_mode')
+
+    def get_ss_allure_mode(self):
+        return self.get_value('Automation', 'attach_screenshot_allure_html_report')
