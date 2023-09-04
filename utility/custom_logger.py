@@ -5,12 +5,13 @@ import time
 import allure
 from test_suites import project_directory
 from utility.config_reader import ConfigReader
+from utility.generate_file_name import generate_ss_folder, generate_ss_filename
 
 config_reader = ConfigReader()
 
 
 def setup_custom_logger(name):
-    log_dir = str(project_directory + r"\reporting\logs")
+    log_dir = os.path.join(project_directory, "reporting", "logs")
     os.makedirs(log_dir, exist_ok=True)
 
     # Read log_mode and generate logs based on it.
@@ -61,12 +62,14 @@ def capture_screenshot(driver, name="screenshot"):
     # read the config
     ss = str(config_reader.get_ss_mode().lower())
     allure_ss = str(config_reader.get_ss_allure_mode().lower())
-    # screenshot location & name
-    timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
-    folder_name = f'Test_execution_{time.strftime("%Y-%m-%d")}'
+
+    # folder and filename setup
+    folder_name = generate_ss_folder()
     screenshot_dir = os.path.join(project_directory, 'reporting', 'screenshots', folder_name)
     os.makedirs(screenshot_dir, exist_ok=True)
-    screenshot_path = os.path.join(screenshot_dir, f'{name}_{timestamp}.png')
+    screenshot_path = os.path.join(screenshot_dir, f'{name}_{generate_ss_filename()}')
+
+    # implement the logic
     if allure_ss == 'yes':
         if ss == "off":
             allure_ss_attach(driver, name)
@@ -78,6 +81,3 @@ def capture_screenshot(driver, name="screenshot"):
             driver.save_screenshot(screenshot_path)
         else:
             print("All Screenshot Capture Mode Turned Off")
-
-
-

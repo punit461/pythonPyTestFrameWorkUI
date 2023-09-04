@@ -21,4 +21,3 @@ class DPLocators:
     txt_search = (By.XPATH, "//input[@placeholder='Search']")
     drp_product = (By.XPATH, "//div[@id='user-selection'][1]")
     btn_add_new = (By.XPATH, "//a[contains(@href, '/Admin/ProductAttribute/Create')]")
-

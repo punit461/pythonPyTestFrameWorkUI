@@ -1,11 +1,11 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support.ui import Select
 import time
-import os
+
+from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import WebDriverWait
+
 from utility.config_reader import ConfigReader
-from test_suites import project_directory
 
 
 class BaseClass:
@@ -27,15 +27,38 @@ class BaseClass:
             raise Exception(f"Element {locator} not found within {timeout} seconds.")
 
     def click_element(self, locator, timeout=None):
+        if timeout is None:
+            timeout = self.config_reader.get_timeout()
 
-        element = self.locate_element(locator, timeout)
+        try:
+            element = WebDriverWait(self.driver, timeout).until(
+                ec.element_to_be_clickable(locator)
+            )
+        except TimeoutException:
+            raise Exception(f"Element {locator} not found within {timeout} seconds.")
+
         element.click()
 
     def send_keys(self, locator, text, timeout=None):
 
         element = self.locate_element(locator, timeout)
-        element.clear()
-        element.send_keys(text)
+
+        if timeout is None:
+            timeout = self.config_reader.get_timeout()
+
+        try:
+            # Wait for the element to be clickable
+            WebDriverWait(self.driver, timeout).until(
+                ec.element_to_be_clickable(locator)
+            )
+
+            # Clear the element and send keys
+            element.clear()
+            element.send_keys(text)
+        except TimeoutException:
+            raise Exception(f"Element {locator} not clickable within {timeout} seconds.")
+        except ElementNotInteractableException:
+            raise Exception(f"Element {locator} not interactable.")
 
     def select_dropdown_by_text(self, locator, text, timeout=None):
         try:
@@ -46,19 +69,8 @@ class BaseClass:
         except Exception as e:
             raise Exception(f"An error occurred:{str(e)}")
 
-
-
     def take_screenshot(self, screenshot_name):
         timestamp = time.strftime('%Y%m%d%H%M%S')
         screenshot_path = f"reporting/screenshots/{screenshot_name}_{timestamp}.png"
         self.driver.save_screenshot(screenshot_path)
         return screenshot_path
-
-    # def assertion(condition, failure_message="Assertion failed"):
-    #     try:
-    #         assert condition
-    #         return "passed"
-    #     except AssertionError as e:
-    #         print(failure_message, e)
-    #         raise e
-    #         return "failed"

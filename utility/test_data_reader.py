@@ -32,4 +32,3 @@ class ReadData:
         sheet = workbook[sheet_name]
         cell_value = sheet.cell(row=row_num, column=col_num).value
         return cell_value
-

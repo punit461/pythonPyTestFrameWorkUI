@@ -13,4 +13,3 @@ class DashboardPage(BaseClass):
         self.global_search_box_click()
         self.send_keys(DPLocators.txt_search, value)
         self.click_element(DPLocators.drp_product)
-
