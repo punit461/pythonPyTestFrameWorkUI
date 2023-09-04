@@ -1,390 +1,1381 @@
-2023-08-29 23:51:55 - ERROR - Test test_successful_login FAILED
-2023-08-29 23:51:55 - ERROR - 'WebDriver' object has no attribute 'config_reader'
+2023-08-31 11:04:02 - ERROR - Test test_add_customer FAILED
+2023-08-31 11:04:02 - ERROR - 'str' object has no attribute 'project_dir'
 Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 18, in test_successful_login
-    config_reader = setup.config_reader
-AttributeError: 'WebDriver' object has no attribute 'config_reader'
-2023-08-29 23:51:55 - INFO - Finished test: test_successful_login
-2023-08-29 23:54:54 - ERROR - Test test_successful_login FAILED
-2023-08-29 23:54:54 - ERROR - 'WebDriver' object has no attribute 'config_reader'
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 30, in test_add_customer
+    set_email = str(random.randint(1, 100)) + self.read_test_data.read_json(json_file, "email")
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\test_data_reader.py", line 13, in read_json
+    file_path = os.path.join(self.project_dir, "jsons", file_name)
+AttributeError: 'str' object has no attribute 'project_dir'
+2023-08-31 11:04:02 - INFO - Finished test: test_add_customer
+2023-08-31 11:05:14 - ERROR - Test test_add_customer FAILED
+2023-08-31 11:05:14 - ERROR - 'str' object has no attribute 'project_dir'
 Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 18, in test_successful_login
-    config_reader = request.getfixturevalue("setup").config_reader
-AttributeError: 'WebDriver' object has no attribute 'config_reader'
-2023-08-29 23:54:54 - INFO - Finished test: test_successful_login
-2023-08-29 23:57:31 - ERROR - Test test_successful_login FAILED
-2023-08-29 23:57:31 - ERROR - 'tuple' object has no attribute 'config_reader'
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 30, in test_add_customer
+    set_email = str(random.randint(1, 100)) + self.read_test_data.read_json(json_file, "email")
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\test_data_reader.py", line 13, in read_json
+    file_path = os.path.join(self.project_dir, "jsons", file_name)
+AttributeError: 'str' object has no attribute 'project_dir'
+2023-08-31 11:05:14 - INFO - Finished test: test_add_customer
+2023-08-31 11:07:10 - ERROR - Test test_add_customer FAILED
+2023-08-31 11:07:10 - ERROR - 'str' object has no attribute 'project_dir'
 Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 18, in test_successful_login
-    config_reader = request.getfixturevalue("setup").config_reader
-AttributeError: 'tuple' object has no attribute 'config_reader'
-2023-08-29 23:57:31 - INFO - Finished test: test_successful_login
-2023-08-30 00:03:58 - INFO - test_successful_login completed successfully.
-2023-08-30 00:03:58 - INFO - Finished test: test_successful_login
-2023-08-30 00:05:36 - INFO - test_successful_login completed successfully.
-2023-08-30 00:05:36 - INFO - Finished test: test_successful_login
-2023-08-30 00:09:06 - INFO - test_successful_login completed successfully.
-2023-08-30 00:09:06 - INFO - Finished test: test_successful_login
-2023-08-30 00:09:16 - ERROR - Test test_failure_login FAILED
-2023-08-30 00:09:16 - ERROR - Element ('id', 'Email') not found within 10 seconds.
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
-    element = WebDriverWait(self.driver, timeout).until(
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 30, in test_add_customer
+    set_email = str(random.randint(1, 100)) + self.read_test_data.read_json(json_file, "email")
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\test_data_reader.py", line 16, in read_json
+    file_path = os.path.join(self.project_dir, "jsons", file_name)
+AttributeError: 'str' object has no attribute 'project_dir'
+2023-08-31 11:07:10 - INFO - Finished test: test_add_customer
+2023-08-31 11:09:34 - INFO - test_add_customer completed successfully.
+2023-08-31 11:09:34 - INFO - Finished test: test_add_customer
+2023-08-31 11:16:52 - ERROR - Test test_add_customer FAILED
+2023-08-31 11:16:52 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
 Stacktrace:
-	GetHandleVerifier [0x00007FF70DA852A2+57122]
-	(No symbol) [0x00007FF70D9FEA92]
-	(No symbol) [0x00007FF70D8CE3AB]
-	(No symbol) [0x00007FF70D907D3E]
-	(No symbol) [0x00007FF70D907E2C]
-	(No symbol) [0x00007FF70D940B67]
-	(No symbol) [0x00007FF70D92701F]
-	(No symbol) [0x00007FF70D93EB82]
-	(No symbol) [0x00007FF70D926DB3]
-	(No symbol) [0x00007FF70D8FD2B1]
-	(No symbol) [0x00007FF70D8FE494]
-	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
-	GetHandleVerifier [0x00007FF70DD81D24+3189156]
-	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
-	GetHandleVerifier [0x00007FF70DB16D06+653702]
-	(No symbol) [0x00007FF70DA0A208]
-	(No symbol) [0x00007FF70DA062C4]
-	(No symbol) [0x00007FF70DA063F6]
-	(No symbol) [0x00007FF70D9F67A3]
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
 	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
 	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 37, in test_failure_login
-    login_page.login(username, password)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
-    self.enter_username(username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
-    self.send_keys(LPLocators.txt_username, username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
-    element = self.locate_element(locator, timeout)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
-    raise Exception(f"Element {locator} not found within {timeout} seconds.")
-Exception: Element ('id', 'Email') not found within 10 seconds.
-2023-08-30 00:09:16 - INFO - Finished test: test_failure_login
-2023-08-30 00:11:10 - ERROR - Test test_failure_login FAILED
-2023-08-30 00:11:10 - ERROR - assert 'Dashboard / nopCommerce administration' == 'Fail'
-  - Fail
-  + Dashboard / nopCommerce administration
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 40, in test_failure_login
-    assert (driver.title == "Fail")
-AssertionError: assert 'Dashboard / nopCommerce administration' == 'Fail'
-  - Fail
-  + Dashboard / nopCommerce administration
-2023-08-30 00:11:10 - INFO - Finished test: test_failure_login
-2023-08-30 00:11:50 - INFO - test_successful_login completed successfully.
-2023-08-30 00:11:50 - INFO - Finished test: test_successful_login
-2023-08-30 00:12:01 - ERROR - Test test_failure_login FAILED
-2023-08-30 00:12:01 - ERROR - Element ('id', 'Email') not found within 10 seconds.
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
-    element = WebDriverWait(self.driver, timeout).until(
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
+2023-08-31 11:16:52 - INFO - Finished test: test_add_customer
+2023-08-31 11:17:21 - ERROR - Test test_add_customer FAILED
+2023-08-31 11:17:21 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
 Stacktrace:
-	GetHandleVerifier [0x00007FF70DA852A2+57122]
-	(No symbol) [0x00007FF70D9FEA92]
-	(No symbol) [0x00007FF70D8CE3AB]
-	(No symbol) [0x00007FF70D907D3E]
-	(No symbol) [0x00007FF70D907E2C]
-	(No symbol) [0x00007FF70D940B67]
-	(No symbol) [0x00007FF70D92701F]
-	(No symbol) [0x00007FF70D93EB82]
-	(No symbol) [0x00007FF70D926DB3]
-	(No symbol) [0x00007FF70D8FD2B1]
-	(No symbol) [0x00007FF70D8FE494]
-	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
-	GetHandleVerifier [0x00007FF70DD81D24+3189156]
-	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
-	GetHandleVerifier [0x00007FF70DB16D06+653702]
-	(No symbol) [0x00007FF70DA0A208]
-	(No symbol) [0x00007FF70DA062C4]
-	(No symbol) [0x00007FF70DA063F6]
-	(No symbol) [0x00007FF70D9F67A3]
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
 	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
 	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 37, in test_failure_login
-    login_page.login(username, password)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
-    self.enter_username(username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
-    self.send_keys(LPLocators.txt_username, username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
-    element = self.locate_element(locator, timeout)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
-    raise Exception(f"Element {locator} not found within {timeout} seconds.")
-Exception: Element ('id', 'Email') not found within 10 seconds.
-2023-08-30 00:12:01 - INFO - Finished test: test_failure_login
-2023-08-30 00:28:09 - INFO - test_successful_login completed successfully.
-2023-08-30 00:28:09 - INFO - Finished test: test_successful_login
-2023-08-30 00:28:20 - ERROR - Test test_failure_login FAILED
-2023-08-30 00:28:20 - ERROR - Element ('id', 'Email') not found within 10 seconds.
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
-    element = WebDriverWait(self.driver, timeout).until(
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
+2023-08-31 11:17:21 - INFO - Finished test: test_add_customer
+2023-08-31 11:18:14 - INFO - test_add_customer completed successfully.
+2023-08-31 11:18:14 - INFO - Finished test: test_add_customer
+2023-08-31 12:32:58 - INFO - test_add_customer completed successfully.
+2023-08-31 12:32:58 - INFO - Finished test: test_add_customer
+2023-08-31 12:38:45 - INFO - test_add_customer completed successfully.
+2023-08-31 12:38:45 - INFO - Finished test: test_add_customer
+2023-08-31 12:43:53 - INFO - test_add_customer completed successfully.
+2023-08-31 12:43:53 - INFO - Finished test: test_add_customer
+2023-08-31 18:42:31 - ERROR - Test test_add_customer FAILED
+2023-08-31 18:42:31 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
 Stacktrace:
-	GetHandleVerifier [0x00007FF70DA852A2+57122]
-	(No symbol) [0x00007FF70D9FEA92]
-	(No symbol) [0x00007FF70D8CE3AB]
-	(No symbol) [0x00007FF70D907D3E]
-	(No symbol) [0x00007FF70D907E2C]
-	(No symbol) [0x00007FF70D940B67]
-	(No symbol) [0x00007FF70D92701F]
-	(No symbol) [0x00007FF70D93EB82]
-	(No symbol) [0x00007FF70D926DB3]
-	(No symbol) [0x00007FF70D8FD2B1]
-	(No symbol) [0x00007FF70D8FE494]
-	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
-	GetHandleVerifier [0x00007FF70DD81D24+3189156]
-	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
-	GetHandleVerifier [0x00007FF70DB16D06+653702]
-	(No symbol) [0x00007FF70DA0A208]
-	(No symbol) [0x00007FF70DA062C4]
-	(No symbol) [0x00007FF70DA063F6]
-	(No symbol) [0x00007FF70D9F67A3]
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
 	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
 	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 37, in test_failure_login
-    login_page.login(username, password)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
-    self.enter_username(username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
-    self.send_keys(LPLocators.txt_username, username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
-    element = self.locate_element(locator, timeout)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
-    raise Exception(f"Element {locator} not found within {timeout} seconds.")
-Exception: Element ('id', 'Email') not found within 10 seconds.
-2023-08-30 00:28:20 - INFO - Finished test: test_failure_login
-2023-08-30 00:45:11 - INFO - test_successful_login completed successfully.
-2023-08-30 00:45:11 - INFO - Finished test: test_successful_login
-2023-08-30 00:46:24 - INFO - test_successful_login completed successfully.
-2023-08-30 00:46:24 - INFO - Finished test: test_successful_login
-2023-08-30 00:46:34 - ERROR - Test test_failure_login FAILED
-2023-08-30 00:46:34 - ERROR - Element ('id', 'Email') not found within 10 seconds.
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 22, in locate_element
-    element = WebDriverWait(self.driver, timeout).until(
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
+2023-08-31 18:42:31 - INFO - Finished test: test_add_customer
+2023-08-31 18:42:56 - ERROR - Test test_add_customer FAILED
+2023-08-31 18:42:56 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
 Stacktrace:
-	GetHandleVerifier [0x00007FF70DA852A2+57122]
-	(No symbol) [0x00007FF70D9FEA92]
-	(No symbol) [0x00007FF70D8CE3AB]
-	(No symbol) [0x00007FF70D907D3E]
-	(No symbol) [0x00007FF70D907E2C]
-	(No symbol) [0x00007FF70D940B67]
-	(No symbol) [0x00007FF70D92701F]
-	(No symbol) [0x00007FF70D93EB82]
-	(No symbol) [0x00007FF70D926DB3]
-	(No symbol) [0x00007FF70D8FD2B1]
-	(No symbol) [0x00007FF70D8FE494]
-	GetHandleVerifier [0x00007FF70DD2EF82+2849794]
-	GetHandleVerifier [0x00007FF70DD81D24+3189156]
-	GetHandleVerifier [0x00007FF70DD7ACAF+3160367]
-	GetHandleVerifier [0x00007FF70DB16D06+653702]
-	(No symbol) [0x00007FF70DA0A208]
-	(No symbol) [0x00007FF70DA062C4]
-	(No symbol) [0x00007FF70DA063F6]
-	(No symbol) [0x00007FF70D9F67A3]
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
 	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
 	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 
+2023-08-31 18:42:56 - INFO - Finished test: test_add_customer
+2023-08-31 18:43:18 - INFO - test_add_customer completed successfully.
+2023-08-31 18:43:18 - INFO - Finished test: test_add_customer
+2023-08-31 18:51:26 - INFO - test_add_customer completed successfully.
+2023-08-31 18:51:26 - INFO - Finished test: test_add_customer
+2023-08-31 19:52:08 - ERROR - Test test_add_customer FAILED
+2023-08-31 19:52:08 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 
-During handling of the above exception, another exception occurred:
+2023-08-31 19:52:08 - INFO - Finished test: test_add_customer
+2023-08-31 19:52:28 - INFO - test_add_customer completed successfully.
+2023-08-31 19:52:28 - INFO - Finished test: test_add_customer
+2023-08-31 19:56:53 - ERROR - Test test_add_customer FAILED
+2023-08-31 19:56:53 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 44, in test_failure_login
-    login_page.login(username, password)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 19, in login
-    self.enter_username(username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\login_page_class.py", line 10, in enter_username
-    self.send_keys(LPLocators.txt_username, username)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 36, in send_keys
-    element = self.locate_element(locator, timeout)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 27, in locate_element
-    raise Exception(f"Element {locator} not found within {timeout} seconds.")
-Exception: Element ('id', 'Email') not found within 10 seconds.
-2023-08-30 00:46:34 - INFO - Finished test: test_failure_login
-2023-08-30 00:51:02 - INFO - test_successful_login completed successfully.
-2023-08-30 00:51:02 - INFO - Finished test: test_successful_login
-2023-08-30 00:52:42 - ERROR - Test test_failure_login FAILED
-2023-08-30 00:52:42 - ERROR - assert 'Dashboard / nopCommerce administration' == 'Fail'
-  - Fail
-  + Dashboard / nopCommerce administration
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 39, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 47, in test_failure_login
-    assert (driver.title == "Fail")
-AssertionError: assert 'Dashboard / nopCommerce administration' == 'Fail'
-  - Fail
-  + Dashboard / nopCommerce administration
-2023-08-30 00:52:42 - INFO - Finished test: test_failure_login
-2023-08-30 01:36:36 - ERROR - Test test_successful_login FAILED
-2023-08-30 01:36:36 - ERROR - cannot unpack non-iterable NoneType object
+2023-08-31 19:56:53 - INFO - Finished test: test_add_customer
+2023-08-31 19:59:38 - ERROR - Test test_add_customer FAILED
+2023-08-31 19:59:38 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
 Traceback (most recent call last):
   File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 22, in test_successful_login
-    driver, config_reader = setup
-TypeError: cannot unpack non-iterable NoneType object
-2023-08-30 01:36:36 - INFO - Finished test: test_successful_login
-2023-08-30 01:36:46 - ERROR - Test test_failure_login FAILED
-2023-08-30 01:36:46 - ERROR - cannot unpack non-iterable NoneType object
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 39, in test_failure_login
-    driver, config_reader = setup
-TypeError: cannot unpack non-iterable NoneType object
-2023-08-30 01:36:46 - INFO - Finished test: test_failure_login
-2023-08-30 01:39:29 - ERROR - Test test_successful_login FAILED
-2023-08-30 01:39:29 - ERROR - cannot unpack non-iterable NoneType object
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 22, in test_successful_login
-    driver, config_reader = setup
-TypeError: cannot unpack non-iterable NoneType object
-2023-08-30 01:39:29 - INFO - Finished test: test_successful_login
-2023-08-30 01:39:44 - ERROR - Test test_failure_login FAILED
-2023-08-30 01:39:44 - ERROR - cannot unpack non-iterable NoneType object
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 39, in test_failure_login
-    driver, config_reader = setup
-TypeError: cannot unpack non-iterable NoneType object
-2023-08-30 01:39:44 - INFO - Finished test: test_failure_login
-2023-08-30 01:40:12 - ERROR - Test test_successful_login FAILED
-2023-08-30 01:40:12 - ERROR - cannot unpack non-iterable NoneType object
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 22, in test_successful_login
-    driver, config_reader = setup
-TypeError: cannot unpack non-iterable NoneType object
-2023-08-30 01:40:12 - INFO - Finished test: test_successful_login
-2023-08-30 01:40:39 - ERROR - Test test_failure_login FAILED
-2023-08-30 01:40:39 - ERROR - cannot unpack non-iterable NoneType object
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 39, in test_failure_login
-    driver, config_reader = setup
-TypeError: cannot unpack non-iterable NoneType object
-2023-08-30 01:40:39 - INFO - Finished test: test_failure_login
-2023-08-30 01:42:23 - INFO - test_successful_login completed successfully.
-2023-08-30 01:42:23 - INFO - Finished test: test_successful_login
-2023-08-30 01:44:09 - ERROR - Test test_failure_login FAILED
-2023-08-30 01:44:09 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606D452A2+57122]
+	(No symbol) [0x00007FF606CBEA92]
+	(No symbol) [0x00007FF606B8E25D]
+	(No symbol) [0x00007FF606BC8E97]
+	(No symbol) [0x00007FF606BBF25F]
+	(No symbol) [0x00007FF606BE6FDA]
+	(No symbol) [0x00007FF606BBEB76]
+	(No symbol) [0x00007FF606BE71F0]
+	(No symbol) [0x00007FF606BFEB82]
+	(No symbol) [0x00007FF606BE6DB3]
+	(No symbol) [0x00007FF606BBD2B1]
+	(No symbol) [0x00007FF606BBE494]
+	GetHandleVerifier [0x00007FF606FEEF82+2849794]
+	GetHandleVerifier [0x00007FF607041D24+3189156]
+	GetHandleVerifier [0x00007FF60703ACAF+3160367]
+	GetHandleVerifier [0x00007FF606DD6D06+653702]
+	(No symbol) [0x00007FF606CCA208]
+	(No symbol) [0x00007FF606CC62C4]
+	(No symbol) [0x00007FF606CC63F6]
+	(No symbol) [0x00007FF606CB67A3]
+	BaseThreadInitThunk [0x00007FFA6C8B257D+29]
+	RtlUserThreadStart [0x00007FFA6E92AA68+40]
+
+2023-08-31 19:59:38 - INFO - Finished test: test_add_customer
+2023-08-31 20:01:19 - INFO - test_add_customer completed successfully.
+2023-08-31 20:01:19 - INFO - Finished test: test_add_customer
+2023-08-31 20:01:55 - INFO - test_successful_login completed successfully.
+2023-08-31 20:01:55 - INFO - Finished test: test_successful_login
+2023-08-31 20:02:11 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:02:11 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
 Traceback (most recent call last):
   File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
     assert (driver.title == "Fail")
 AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
-2023-08-30 01:44:09 - INFO - Finished test: test_failure_login
-2023-08-30 02:02:28 - INFO - test_successful_login completed successfully.
-2023-08-30 02:02:28 - INFO - Finished test: test_successful_login
-2023-08-30 02:03:14 - ERROR - Test test_failure_login FAILED
-2023-08-30 02:03:14 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+2023-08-31 20:02:11 - INFO - Finished test: test_failure_login
+2023-08-31 20:04:04 - INFO - test_successful_login completed successfully.
+2023-08-31 20:04:04 - INFO - Finished test: test_successful_login
+2023-08-31 20:04:13 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:04:13 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
 Traceback (most recent call last):
   File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
     assert (driver.title == "Fail")
 AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
-2023-08-30 02:03:14 - INFO - Finished test: test_failure_login
-2023-08-30 02:05:35 - INFO - test_successful_login completed successfully.
-2023-08-30 02:05:35 - INFO - Finished test: test_successful_login
-2023-08-30 02:06:07 - ERROR - Test test_failure_login FAILED
-2023-08-30 02:06:07 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+2023-08-31 20:04:13 - INFO - Finished test: test_failure_login
+2023-08-31 20:10:35 - INFO - test_successful_login completed successfully.
+2023-08-31 20:10:35 - INFO - Finished test: test_successful_login
+2023-08-31 20:10:48 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:10:48 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
 Traceback (most recent call last):
   File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
     assert (driver.title == "Fail")
 AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
-2023-08-30 02:06:07 - INFO - Finished test: test_failure_login
-2023-08-30 02:09:55 - ERROR - Test test_successful_login FAILED
-2023-08-30 02:09:55 - ERROR - assert 'admin-demo.n...eout occurred' == 'Dashboard / ...dministration'
-  - Dashboard / nopCommerce administration
-  + admin-demo.nopcommerce.com | 524: A timeout occurred
-Traceback (most recent call last):
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
-    result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 33, in test_successful_login
-    assert (driver.title == "Dashboard / nopCommerce administration")
-AssertionError: assert 'admin-demo.n...eout occurred' == 'Dashboard / ...dministration'
-  - Dashboard / nopCommerce administration
-  + admin-demo.nopcommerce.com | 524: A timeout occurred
-2023-08-30 02:09:55 - INFO - Finished test: test_successful_login
-2023-08-30 02:10:29 - ERROR - Test test_failure_login FAILED
-2023-08-30 02:10:29 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+2023-08-31 20:10:48 - INFO - Finished test: test_failure_login
+2023-08-31 20:12:53 - INFO - test_successful_login completed successfully.
+2023-08-31 20:12:53 - INFO - Finished test: test_successful_login
+2023-08-31 20:13:08 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:13:08 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
 Traceback (most recent call last):
   File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
     result = func(*args, **kwargs)
-  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 50, in test_failure_login
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
     assert (driver.title == "Fail")
 AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
   - Fail
   + Dashboard / nopCommerce administration
-2023-08-30 02:10:29 - INFO - Finished test: test_failure_login
+2023-08-31 20:13:08 - INFO - Finished test: test_failure_login
+2023-08-31 20:13:45 - INFO - test_successful_login completed successfully.
+2023-08-31 20:13:45 - INFO - Finished test: test_successful_login
+2023-08-31 20:14:00 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:14:00 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-31 20:14:00 - INFO - Finished test: test_failure_login
+2023-08-31 20:15:37 - INFO - test_successful_login completed successfully.
+2023-08-31 20:15:37 - INFO - Finished test: test_successful_login
+2023-08-31 20:15:51 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:15:51 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-31 20:15:51 - INFO - Finished test: test_failure_login
+2023-08-31 20:17:01 - INFO - test_successful_login completed successfully.
+2023-08-31 20:17:01 - INFO - Finished test: test_successful_login
+2023-08-31 20:17:16 - ERROR - Test test_failure_login FAILED
+2023-08-31 20:17:16 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-08-31 20:17:16 - INFO - Finished test: test_failure_login
+2023-09-01 11:28:55 - INFO - test_successful_login completed successfully.
+2023-09-01 11:28:55 - INFO - Finished test: test_successful_login
+2023-09-01 11:29:01 - ERROR - Test test_failure_login FAILED
+2023-09-01 11:29:01 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 11:29:01 - INFO - Finished test: test_failure_login
+2023-09-01 11:34:50 - INFO - test_successful_login completed successfully.
+2023-09-01 11:34:50 - INFO - Finished test: test_successful_login
+2023-09-01 11:34:56 - ERROR - Test test_failure_login FAILED
+2023-09-01 11:34:56 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 11:34:56 - INFO - Finished test: test_failure_login
+2023-09-01 11:41:01 - INFO - test_successful_login completed successfully.
+2023-09-01 11:41:01 - INFO - Finished test: test_successful_login
+2023-09-01 11:41:07 - ERROR - Test test_failure_login FAILED
+2023-09-01 11:41:07 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 11:41:07 - INFO - Finished test: test_failure_login
+2023-09-01 11:41:45 - INFO - test_successful_login completed successfully.
+2023-09-01 11:41:45 - INFO - Finished test: test_successful_login
+2023-09-01 11:41:59 - ERROR - Test test_failure_login FAILED
+2023-09-01 11:41:59 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 11:41:59 - INFO - Finished test: test_failure_login
+2023-09-01 15:18:59 - INFO - test_successful_login completed successfully.
+2023-09-01 15:18:59 - INFO - Finished test: test_successful_login
+2023-09-01 15:19:15 - ERROR - Test test_failure_login FAILED
+2023-09-01 15:19:15 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 15:19:15 - INFO - Finished test: test_failure_login
+2023-09-01 15:20:33 - INFO - test_successful_login completed successfully.
+2023-09-01 15:20:33 - INFO - Finished test: test_successful_login
+2023-09-01 15:20:43 - ERROR - Test test_failure_login FAILED
+2023-09-01 15:20:43 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 15:20:43 - INFO - Finished test: test_failure_login
+2023-09-01 15:22:37 - INFO - test_successful_login completed successfully.
+2023-09-01 15:22:37 - INFO - Finished test: test_successful_login
+2023-09-01 15:22:54 - ERROR - Test test_failure_login FAILED
+2023-09-01 15:22:54 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 15:22:54 - INFO - Finished test: test_failure_login
+2023-09-01 15:25:51 - INFO - test_successful_login completed successfully.
+2023-09-01 15:25:51 - INFO - Finished test: test_successful_login
+2023-09-01 15:26:08 - ERROR - Test test_failure_login FAILED
+2023-09-01 15:26:08 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 15:26:08 - INFO - Finished test: test_failure_login
+2023-09-01 15:30:07 - INFO - test_successful_login completed successfully.
+2023-09-01 15:30:07 - INFO - Finished test: test_successful_login
+2023-09-01 15:30:21 - ERROR - Test test_failure_login FAILED
+2023-09-01 15:30:21 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 15:30:21 - INFO - Finished test: test_failure_login
+2023-09-01 17:58:02 - INFO - test_successful_login completed successfully.
+2023-09-01 17:58:02 - INFO - Finished test: test_successful_login
+2023-09-01 17:58:16 - ERROR - Test test_failure_login FAILED
+2023-09-01 17:58:16 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 17:58:16 - INFO - Finished test: test_failure_login
+2023-09-01 18:44:25 - INFO - test_successful_login completed successfully.
+2023-09-01 18:44:25 - INFO - Finished test: test_successful_login
+2023-09-01 18:44:34 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:44:34 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:44:34 - INFO - Finished test: test_failure_login
+2023-09-01 18:45:52 - INFO - test_successful_login completed successfully.
+2023-09-01 18:45:52 - INFO - Finished test: test_successful_login
+2023-09-01 18:45:58 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:45:58 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:45:58 - INFO - Finished test: test_failure_login
+2023-09-01 18:48:04 - INFO - test_successful_login completed successfully.
+2023-09-01 18:48:04 - INFO - Finished test: test_successful_login
+2023-09-01 18:48:12 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:48:12 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:48:12 - INFO - Finished test: test_failure_login
+2023-09-01 18:49:54 - INFO - test_successful_login completed successfully.
+2023-09-01 18:49:54 - INFO - Finished test: test_successful_login
+2023-09-01 18:50:00 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:50:00 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:50:00 - INFO - Finished test: test_failure_login
+2023-09-01 18:51:42 - INFO - test_successful_login completed successfully.
+2023-09-01 18:51:42 - INFO - Finished test: test_successful_login
+2023-09-01 18:51:50 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:51:50 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:51:50 - INFO - Finished test: test_failure_login
+2023-09-01 18:53:00 - INFO - test_successful_login completed successfully.
+2023-09-01 18:53:00 - INFO - Finished test: test_successful_login
+2023-09-01 18:53:08 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:53:08 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:53:08 - INFO - Finished test: test_failure_login
+2023-09-01 18:54:58 - INFO - test_successful_login completed successfully.
+2023-09-01 18:54:58 - INFO - Finished test: test_successful_login
+2023-09-01 18:55:06 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:55:06 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:55:06 - INFO - Finished test: test_failure_login
+2023-09-01 18:56:27 - INFO - test_successful_login completed successfully.
+2023-09-01 18:56:27 - INFO - Finished test: test_successful_login
+2023-09-01 18:56:36 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:56:36 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:56:36 - INFO - Finished test: test_failure_login
+2023-09-01 18:57:58 - INFO - test_successful_login completed successfully.
+2023-09-01 18:57:58 - INFO - Finished test: test_successful_login
+2023-09-01 18:58:08 - ERROR - Test test_failure_login FAILED
+2023-09-01 18:58:08 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 18:58:08 - INFO - Finished test: test_failure_login
+2023-09-01 19:00:49 - INFO - test_successful_login completed successfully.
+2023-09-01 19:00:49 - INFO - Finished test: test_successful_login
+2023-09-01 19:01:01 - ERROR - Test test_failure_login FAILED
+2023-09-01 19:01:01 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 19:01:01 - INFO - Finished test: test_failure_login
+2023-09-01 19:01:19 - INFO - test_successful_login completed successfully.
+2023-09-01 19:01:19 - INFO - Finished test: test_successful_login
+2023-09-01 19:01:28 - ERROR - Test test_failure_login FAILED
+2023-09-01 19:01:28 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 19:01:28 - INFO - Finished test: test_failure_login
+2023-09-01 19:03:00 - INFO - test_successful_login completed successfully.
+2023-09-01 19:03:00 - INFO - Finished test: test_successful_login
+2023-09-01 19:03:09 - ERROR - Test test_failure_login FAILED
+2023-09-01 19:03:09 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 19:03:09 - INFO - Finished test: test_failure_login
+2023-09-01 19:04:54 - INFO - test_successful_login completed successfully.
+2023-09-01 19:04:54 - INFO - Finished test: test_successful_login
+2023-09-01 19:05:05 - ERROR - Test test_failure_login FAILED
+2023-09-01 19:05:05 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 19:05:05 - INFO - Finished test: test_failure_login
+2023-09-01 19:07:57 - INFO - test_successful_login completed successfully.
+2023-09-01 19:07:57 - INFO - Finished test: test_successful_login
+2023-09-01 19:08:07 - ERROR - Test test_failure_login FAILED
+2023-09-01 19:08:07 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 19:08:07 - INFO - Finished test: test_failure_login
+2023-09-01 19:31:49 - INFO - test_successful_login completed successfully.
+2023-09-01 19:31:49 - INFO - Finished test: test_successful_login
+2023-09-01 19:32:03 - INFO - test_failure_login completed successfully.
+2023-09-01 19:32:03 - INFO - Finished test: test_failure_login
+2023-09-01 19:33:28 - INFO - test_successful_login completed successfully.
+2023-09-01 19:33:28 - INFO - Finished test: test_successful_login
+2023-09-01 19:33:42 - INFO - test_failure_login completed successfully.
+2023-09-01 19:33:42 - INFO - Finished test: test_failure_login
+2023-09-01 19:43:41 - INFO - test_successful_login completed successfully.
+2023-09-01 19:43:41 - INFO - Finished test: test_successful_login
+2023-09-01 19:43:47 - ERROR - Test test_failure_login FAILED
+2023-09-01 19:43:47 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-01 19:43:47 - INFO - Finished test: test_failure_login
+2023-09-04 11:09:27 - INFO - test_successful_login completed successfully.
+2023-09-04 11:09:27 - INFO - Finished test: test_successful_login
+2023-09-04 11:09:38 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:09:38 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:09:38 - INFO - Finished test: test_failure_login
+2023-09-04 11:11:50 - INFO - test_successful_login completed successfully.
+2023-09-04 11:11:50 - INFO - Finished test: test_successful_login
+2023-09-04 11:11:58 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:11:58 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:11:58 - INFO - Finished test: test_failure_login
+2023-09-04 11:13:26 - INFO - test_successful_login completed successfully.
+2023-09-04 11:13:26 - INFO - Finished test: test_successful_login
+2023-09-04 11:13:38 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:13:38 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:13:38 - INFO - Finished test: test_failure_login
+2023-09-04 11:15:37 - INFO - test_successful_login completed successfully.
+2023-09-04 11:15:37 - INFO - Finished test: test_successful_login
+2023-09-04 11:15:46 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:15:46 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:15:46 - INFO - Finished test: test_failure_login
+2023-09-04 11:23:53 - ERROR - Test test_add_customer FAILED
+2023-09-04 11:23:53 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AA1752A2+57122]
+	(No symbol) [0x00007FF7AA0EEA92]
+	(No symbol) [0x00007FF7A9FBE25D]
+	(No symbol) [0x00007FF7A9FF8E97]
+	(No symbol) [0x00007FF7A9FEF25F]
+	(No symbol) [0x00007FF7AA016FDA]
+	(No symbol) [0x00007FF7A9FEEB76]
+	(No symbol) [0x00007FF7AA0171F0]
+	(No symbol) [0x00007FF7AA02EB82]
+	(No symbol) [0x00007FF7AA016DB3]
+	(No symbol) [0x00007FF7A9FED2B1]
+	(No symbol) [0x00007FF7A9FEE494]
+	GetHandleVerifier [0x00007FF7AA41EF82+2849794]
+	GetHandleVerifier [0x00007FF7AA471D24+3189156]
+	GetHandleVerifier [0x00007FF7AA46ACAF+3160367]
+	GetHandleVerifier [0x00007FF7AA206D06+653702]
+	(No symbol) [0x00007FF7AA0FA208]
+	(No symbol) [0x00007FF7AA0F62C4]
+	(No symbol) [0x00007FF7AA0F63F6]
+	(No symbol) [0x00007FF7AA0E67A3]
+	BaseThreadInitThunk [0x00007FFB2CA2257D+29]
+	RtlUserThreadStart [0x00007FFB2D1EAA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AA1752A2+57122]
+	(No symbol) [0x00007FF7AA0EEA92]
+	(No symbol) [0x00007FF7A9FBE25D]
+	(No symbol) [0x00007FF7A9FF8E97]
+	(No symbol) [0x00007FF7A9FEF25F]
+	(No symbol) [0x00007FF7AA016FDA]
+	(No symbol) [0x00007FF7A9FEEB76]
+	(No symbol) [0x00007FF7AA0171F0]
+	(No symbol) [0x00007FF7AA02EB82]
+	(No symbol) [0x00007FF7AA016DB3]
+	(No symbol) [0x00007FF7A9FED2B1]
+	(No symbol) [0x00007FF7A9FEE494]
+	GetHandleVerifier [0x00007FF7AA41EF82+2849794]
+	GetHandleVerifier [0x00007FF7AA471D24+3189156]
+	GetHandleVerifier [0x00007FF7AA46ACAF+3160367]
+	GetHandleVerifier [0x00007FF7AA206D06+653702]
+	(No symbol) [0x00007FF7AA0FA208]
+	(No symbol) [0x00007FF7AA0F62C4]
+	(No symbol) [0x00007FF7AA0F63F6]
+	(No symbol) [0x00007FF7AA0E67A3]
+	BaseThreadInitThunk [0x00007FFB2CA2257D+29]
+	RtlUserThreadStart [0x00007FFB2D1EAA68+40]
+
+2023-09-04 11:23:53 - INFO - Finished test: test_add_customer
+2023-09-04 11:24:04 - INFO - test_successful_login completed successfully.
+2023-09-04 11:24:04 - INFO - Finished test: test_successful_login
+2023-09-04 11:24:18 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:24:18 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:24:18 - INFO - Finished test: test_failure_login
+2023-09-04 11:37:54 - INFO - test_add_customer completed successfully.
+2023-09-04 11:37:54 - INFO - Finished test: test_add_customer
+2023-09-04 11:38:04 - INFO - test_successful_login completed successfully.
+2023-09-04 11:38:04 - INFO - Finished test: test_successful_login
+2023-09-04 11:38:16 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:38:16 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:38:16 - INFO - Finished test: test_failure_login
+2023-09-04 11:41:08 - INFO - test_successful_login completed successfully.
+2023-09-04 11:41:08 - INFO - Finished test: test_successful_login
+2023-09-04 11:41:23 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:41:23 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:41:23 - INFO - Finished test: test_failure_login
+2023-09-04 11:41:50 - ERROR - Test test_add_customer FAILED
+2023-09-04 11:41:50 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AA1752A2+57122]
+	(No symbol) [0x00007FF7AA0EEA92]
+	(No symbol) [0x00007FF7A9FBE25D]
+	(No symbol) [0x00007FF7A9FF8E97]
+	(No symbol) [0x00007FF7A9FEF25F]
+	(No symbol) [0x00007FF7AA016FDA]
+	(No symbol) [0x00007FF7A9FEEB76]
+	(No symbol) [0x00007FF7AA0171F0]
+	(No symbol) [0x00007FF7AA02EB82]
+	(No symbol) [0x00007FF7AA016DB3]
+	(No symbol) [0x00007FF7A9FED2B1]
+	(No symbol) [0x00007FF7A9FEE494]
+	GetHandleVerifier [0x00007FF7AA41EF82+2849794]
+	GetHandleVerifier [0x00007FF7AA471D24+3189156]
+	GetHandleVerifier [0x00007FF7AA46ACAF+3160367]
+	GetHandleVerifier [0x00007FF7AA206D06+653702]
+	(No symbol) [0x00007FF7AA0FA208]
+	(No symbol) [0x00007FF7AA0F62C4]
+	(No symbol) [0x00007FF7AA0F63F6]
+	(No symbol) [0x00007FF7AA0E67A3]
+	BaseThreadInitThunk [0x00007FFB2CA2257D+29]
+	RtlUserThreadStart [0x00007FFB2D1EAA68+40]
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_customer_page.py", line 53, in test_add_customer
+    customer_page.click_customer_submenu()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\pages\add_customer_page_class.py", line 14, in click_customer_submenu
+    self.click_element(ACLocators.lnkCustomers_menuitem)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\base.py", line 32, in click_element
+    element.click()
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AA1752A2+57122]
+	(No symbol) [0x00007FF7AA0EEA92]
+	(No symbol) [0x00007FF7A9FBE25D]
+	(No symbol) [0x00007FF7A9FF8E97]
+	(No symbol) [0x00007FF7A9FEF25F]
+	(No symbol) [0x00007FF7AA016FDA]
+	(No symbol) [0x00007FF7A9FEEB76]
+	(No symbol) [0x00007FF7AA0171F0]
+	(No symbol) [0x00007FF7AA02EB82]
+	(No symbol) [0x00007FF7AA016DB3]
+	(No symbol) [0x00007FF7A9FED2B1]
+	(No symbol) [0x00007FF7A9FEE494]
+	GetHandleVerifier [0x00007FF7AA41EF82+2849794]
+	GetHandleVerifier [0x00007FF7AA471D24+3189156]
+	GetHandleVerifier [0x00007FF7AA46ACAF+3160367]
+	GetHandleVerifier [0x00007FF7AA206D06+653702]
+	(No symbol) [0x00007FF7AA0FA208]
+	(No symbol) [0x00007FF7AA0F62C4]
+	(No symbol) [0x00007FF7AA0F63F6]
+	(No symbol) [0x00007FF7AA0E67A3]
+	BaseThreadInitThunk [0x00007FFB2CA2257D+29]
+	RtlUserThreadStart [0x00007FFB2D1EAA68+40]
+
+2023-09-04 11:41:50 - INFO - Finished test: test_add_customer
+2023-09-04 11:42:00 - INFO - test_successful_login completed successfully.
+2023-09-04 11:42:00 - INFO - Finished test: test_successful_login
+2023-09-04 11:42:13 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:42:13 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:42:13 - INFO - Finished test: test_failure_login
+2023-09-04 11:48:02 - INFO - test_add_customer completed successfully.
+2023-09-04 11:48:02 - INFO - Finished test: test_add_customer
+2023-09-04 11:48:12 - INFO - test_successful_login completed successfully.
+2023-09-04 11:48:12 - INFO - Finished test: test_successful_login
+2023-09-04 11:48:27 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:48:27 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:48:27 - INFO - Finished test: test_failure_login
+2023-09-04 11:49:59 - INFO - test_successful_login completed successfully.
+2023-09-04 11:49:59 - INFO - Finished test: test_successful_login
+2023-09-04 11:50:11 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:50:11 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:50:11 - INFO - Finished test: test_failure_login
+2023-09-04 11:51:36 - INFO - test_successful_login completed successfully.
+2023-09-04 11:51:36 - INFO - Finished test: test_successful_login
+2023-09-04 11:51:49 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:51:49 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:51:49 - INFO - Finished test: test_failure_login
+2023-09-04 11:53:05 - INFO - test_successful_login completed successfully.
+2023-09-04 11:53:05 - INFO - Finished test: test_successful_login
+2023-09-04 11:53:11 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:53:11 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:53:11 - INFO - Finished test: test_failure_login
+2023-09-04 11:53:43 - INFO - test_successful_login completed successfully.
+2023-09-04 11:53:43 - INFO - Finished test: test_successful_login
+2023-09-04 11:53:52 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:53:52 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:53:52 - INFO - Finished test: test_failure_login
+2023-09-04 11:54:49 - ERROR - Test test_failure_login FAILED
+2023-09-04 11:54:49 - ERROR - assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+Traceback (most recent call last):
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\utility\custom_logger.py", line 40, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\PythonFramework\pythonPyTestFrameWorkUI\test_cases\test_cases_login_page.py", line 49, in test_failure_login
+    assert (driver.title == "Fail")
+AssertionError: assert 'Dashboard / ...dministration' == 'Fail'
+  - Fail
+  + Dashboard / nopCommerce administration
+2023-09-04 11:54:49 - INFO - Finished test: test_failure_login

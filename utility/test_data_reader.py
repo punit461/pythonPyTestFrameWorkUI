@@ -1,13 +1,16 @@
 import os
+import sys
 import json
 import configparser
 import openpyxl
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from test_cases import project_directory
 
 
 class ReadData:
     def __init__(self):
-        self.project_dir = project_directory
+        self.project_dir = str(project_directory)
 
     def read_json(self, file_name, key=None):
         file_path = os.path.join(self.project_dir, "jsons", file_name)

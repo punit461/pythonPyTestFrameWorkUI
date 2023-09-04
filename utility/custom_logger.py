@@ -35,7 +35,6 @@ def logmethod(func):
     def wrapper(*args, **kwargs):
         logger = setup_custom_logger(func.__name__)
 
-
         try:
             result = func(*args, **kwargs)
             logger.info(f"{func.__name__} completed successfully.")
@@ -50,23 +49,35 @@ def logmethod(func):
     return wrapper
 
 
+def allure_ss_attach(driver, name):
+    allure.attach(
+        driver.get_screenshot_as_png(),
+        name=name,
+        attachment_type=allure.attachment_type.PNG
+    )
+
+
 def capture_screenshot(driver, name="screenshot"):
-    if config_reader.get_ss_mode().lower() == "off" and config_reader.get_ss_allure_mode().lower() == 'yes':
-        allure.attach(
-            driver.get_screenshot_as_png(),
-            name=name,
-            attachment_type=allure.attachment_type.PNG
-        )
+    # read the config
+    ss = str(config_reader.get_ss_mode().lower())
+    allure_ss = str(config_reader.get_ss_allure_mode().lower())
+    # screenshot location & name
+    timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
+    folder_name = f'Test_execution_{time.strftime("%Y-%m-%d")}'
+    screenshot_dir = os.path.join(project_directory, 'reporting', 'screenshots', folder_name)
+    os.makedirs(screenshot_dir, exist_ok=True)
+    screenshot_path = os.path.join(screenshot_dir, f'{name}_{timestamp}.png')
+    if allure_ss == 'yes':
+        if ss == "off":
+            allure_ss_attach(driver, name)
+        else:
+            allure_ss_attach(driver, name)
+            driver.save_screenshot(screenshot_path)
     else:
-        datestamp = time.strftime("%Y-%m-%d")
-        timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
-        folder_name = f'Test_execution_{datestamp}'
-        screenshot_dir = project_directory + "\\reporting\screenshots\\" + folder_name
-        # screenshot_dir = os.path.join(os.getcwd(), 'reporting', 'screenshots', folder_name)
-        os.makedirs(screenshot_dir, exist_ok=True)
-        screenshot_path = os.path.join(screenshot_dir, f'{name}_{timestamp}.png')
-        driver.save_screenshot(screenshot_path)
-        allure_attach = config_reader.get_ss_allure_mode().lower()
-        if allure_attach in ["yes", "y"]:
-            allure.attach.file(screenshot_path, name=name, attachment_type=allure.attachment_type.PNG)
+        if not ss == "off":
+            driver.save_screenshot(screenshot_path)
+        else:
+            print("All Screenshot Capture Mode Turned Off")
+
+
 

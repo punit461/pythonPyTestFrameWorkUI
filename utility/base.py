@@ -53,3 +53,12 @@ class BaseClass:
         screenshot_path = f"reporting/screenshots/{screenshot_name}_{timestamp}.png"
         self.driver.save_screenshot(screenshot_path)
         return screenshot_path
+
+    # def assertion(condition, failure_message="Assertion failed"):
+    #     try:
+    #         assert condition
+    #         return "passed"
+    #     except AssertionError as e:
+    #         print(failure_message, e)
+    #         raise e
+    #         return "failed"
