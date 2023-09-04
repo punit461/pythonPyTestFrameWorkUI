@@ -5,7 +5,7 @@ import time
 import allure
 from test_suites import project_directory
 from utility.config_reader import ConfigReader
-from utility.generate_file_name import generate_ss_folder, generate_ss_filename
+from utility.generate_filename import generate_ss_folder, generate_ss_filename
 
 config_reader = ConfigReader()
 

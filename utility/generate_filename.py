@@ -23,3 +23,5 @@ def generate_ss_folder():
     date, time = date_time()
     current_date = datetime.datetime.now().strftime(date)
     return f"Test_Execution_{current_date}"
+
+
