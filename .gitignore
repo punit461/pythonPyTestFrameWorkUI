@@ -2,15 +2,14 @@
 /shelf/
 /workspace.xml
 
+# Remove the drivers since its not used
+*.exe
+
 # Ignore Python-related files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
-# Ignore test report files and directories
-reporting/allure_reports/
-reporting/html_reports/
 
 # Ignore virtual environment directories (if you're using virtual environments)
 venv/
@@ -21,6 +20,10 @@ env/
 .vscode/
 .idea/
 
+# Ignore test report files and directories
+reporting/allure_reports/
+reporting/html_reports/
+
 # Ignore logs and screenshots
 reporting/logs/
 reporting/screenshots/
@@ -28,17 +31,13 @@ reporting/screenshots/
 # Ignore editor backup files
 *~
 
-# Ignore compiled Python files
-*.pyc
-*.pyo
 
-# Ignore test cache directories
-test_cases/.pytest_cache/
+# Ignore cache directories
+.pytest_cache/
 
 # Ignore Python package build directories
 build/
 dist/
-__pycache__/
 *.egg-info/
 *.egg
 

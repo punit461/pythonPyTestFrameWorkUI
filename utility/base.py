@@ -1,6 +1,6 @@
 import time
 
-from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
+from selenium.common.exceptions import TimeoutException, ElementNotInteractableException, NoSuchFrameException
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
@@ -58,7 +58,7 @@ class BaseClass:
         except TimeoutException:
             raise Exception(f"Element {locator} not clickable within {timeout} seconds.")
         except ElementNotInteractableException:
-            raise Exception(f"Element {locator} not interactable.")
+            raise Exception(f"Element {locator} not intractable.")
 
     def select_dropdown_by_text(self, locator, text, timeout=None):
         try:
@@ -74,3 +74,20 @@ class BaseClass:
         screenshot_path = f"reporting/screenshots/{screenshot_name}_{timestamp}.png"
         self.driver.save_screenshot(screenshot_path)
         return screenshot_path
+
+    def switch_to_iframe(self, iframe_identifier, timeout=None):
+        if timeout is None:
+            timeout = self.config_reader.get_timeout()
+
+        try:
+            WebDriverWait(self.driver, timeout).until(
+                ec.frame_to_be_available_and_switch_to_it(iframe_identifier)
+            )
+        except TimeoutException:
+            raise Exception(f"Iframe '{iframe_identifier}' not found within {timeout} seconds.")
+
+    def switch_to_parent_frame(self):
+        try:
+            self.driver.switch_to.parent_frame()
+        except NoSuchFrameException:
+            raise Exception("No parent frame found to switch to.")

@@ -13,36 +13,32 @@ The project is structured as follows:
   - `Logs`: Log files for debugging and tracking test execution.
   - `Screenshots`: Screenshots captured during test runs.
 - `TestData`: Test data that might be used by tests.
-- `TestSuites`: Test suite files that group and execute tests.
+- `TestCases`: Write Test Cases and maintain it here.
 - `Utilities`: Utility modules and common functions for the framework.
-- `.idea`: IDE-specific settings (created by the IDE).
 - `venv`: Virtual environment directory.
 
 ### Project Tree
 ``` tree -O
 PythonUnitTestFrameWork
 │   README.md
+│   requirements.txt                # maintain all the project requirements
 │   __init__.py
 │
 │
 ├───configurations
-│       config.ini
+│       config.ini                  # all the configurations realted to project
 │
-├───drivers
-│       chromedriver.exe
-│       geckodriver.exe
-│       msedgedriver.exe
 │
 ├───locators
-│       login_page_locators.py
+│       login_page_locators.py      # sample example for storing locator
 │       __init__.py
 │   
 │
 ├───pages
-│       login_page_class.py
+│       login_page_class.py         # sample example for page class ( Implimentation)
 │       __init__.py
 │
-├───reporting
+├───reporting                       # All kinds of reporting folder
 │   ├───html_reports
 │   │       TestResults_test_cases.{test_cases_login_page.TestLoginPage_{yyyy-MM-DD_hh-mm-ss}.html
 │   │
@@ -54,25 +50,25 @@ PythonUnitTestFrameWork
 │       └───Test_execution_2023-08-25
 │               test_{test_method_name}_{yyyy-MM-DD_hh-mm-ss}.png
 │
-├───test_cases
-│       test_base.py
-│       test_cases_login_page.py
+├───test_cases   
+│       test_base.py                # common method which runs before & after every test case
+│       test_cases_login_page.py    # sample test case utilise page class and write test case
 │       __init__.py
 │    
 │
-├───test_data
-│		test_data_homepage.json
+├───test_data 
+│    ├── configurations             # maintain test data in .ini file
+│    ├── jsons                      # maintain test data in .json file
+│    │      test_data_homepage.json # Example
+│    └── worksheets                 # maintain test data in excel/csv files
 │
-├───test_suites
-│       test_suite_login_page.py
-│       __init__.py
 │   
 │
-└───utility
-        base.py
-        config_reader.py
-        custom_logger.py
-        driver_manager.py
+└───utility # maintain all the common methods here
+        base.py                     # All the common logics/ wrappers
+        config_reader.py            # logic to read the config.ini
+        custom_logger.py            # common logic for generating logs
+        driver_manager.py           # logic to launch browser
         __init__.py
 ```
 
@@ -97,12 +93,18 @@ To run the tests, navigate to the project root directory and execute the followi
 
 ```bash
 pytest test_cases
-
 ```
+
+Also, you can use the `run.bat` file to run all the test cases
+
 ## Reporting
-* HTML reports can be found in the `reports/html_reports` directory.
-* Logs are stored in the `reports/logs` directory.
-* Screenshots from test runs are saved in the `reports/screenshots` directory.
+* HTML reports can be found in the `reporting/html_reports` directory.
+* Allure reports are generated in `reporting/allure_reports` directory
+  ```bash
+  allure serve .\reports\allure_reports
+  ```
+* Logs are stored in the `reporting/logs` directory.
+* Screenshots from test runs are saved in the `reporting/screenshots` directory.
 
 ## Contributing
 Contributions to this project are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
