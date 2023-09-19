@@ -9,7 +9,7 @@ class ConfigReader:
         A class for reading configuration from an INI file.
     """
 
-    def __init__(self, config_path=project_directory + '\configurations\config.ini'):
+    def __init__(self, config_path=project_directory + r'\configurations\config.ini'):
         """
                Initialize the ConfigReader.
                Args:
@@ -26,15 +26,15 @@ class ConfigReader:
 
     # Read data from the 'URLs' section
     def get_baseurl(self):
-        base_env = self.get_value('URLs', 'baseEnv')
-        if base_env == "testEnv":
-            return self.get_value('URLs', 'testEnv')
-        elif base_env == "devEnv":
-            return self.get_value('URLs', 'devEnv')
-        elif base_env == "stageEnv":
-            return self.get_value('URLs', 'stageEnv')
+        base_env = self.get_value('URLs', 'base_env')
+        if base_env == "test_env":
+            return self.get_value('URLs', 'test_env')
+        elif base_env == "dev_env":
+            return self.get_value('URLs', 'dev_env')
+        elif base_env == "stage_env":
+            return self.get_value('URLs', 'stage_env')
         else:
-            return self.get_value('URLs', 'prodEnv')
+            return self.get_value('URLs', 'prod_env')
 
     # Read data from the 'Credentials' section
     def get_username(self):

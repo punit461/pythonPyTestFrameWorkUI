@@ -6,9 +6,3 @@ package_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Navigate up one level to get the project directory
 project_directory = os.path.dirname(package_directory)
-
-
-# sys.path.append("E:\PythonFramework\PythonUnitTestFrameWork")
-
-
-

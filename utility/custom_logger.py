@@ -1,9 +1,8 @@
 import functools
 import logging
 import os
-import time
 import allure
-from test_suites import project_directory
+from test_cases import project_directory
 from utility.config_reader import ConfigReader
 from utility.generate_filename import generate_ss_folder, generate_ss_filename
 

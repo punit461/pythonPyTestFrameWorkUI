@@ -21,11 +21,11 @@ class CustomerPage(BaseClass):
     def set_password(self, password):
         self.send_keys(ACLocators.txt_password, password)
 
-    def set_fname(self, fname):
-        self.send_keys(ACLocators.txt_first_name, fname)
+    def set_first_name(self, first_name):
+        self.send_keys(ACLocators.txt_first_name, first_name)
 
-    def set_lname(self, lname):
-        self.send_keys(ACLocators.txt_last_name, lname)
+    def set_last_name(self, last_name):
+        self.send_keys(ACLocators.txt_last_name, last_name)
 
     def set_gender(self, gender):
         if gender.lower() == 'male':
